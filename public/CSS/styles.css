@@ -1,0 +1,600 @@
+/*colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; 
+*/
+
+/* cuerpos de texto
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+*/
+
+* {
+    /*para todo el sitio*/
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*body*/
+body {
+    background-color: #ebebeb;
+    min-width: 360px;
+}
+
+/*Header*/
+header {
+    color: rgb(40, 40, 40);
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    color: rgb(40, 40, 40);
+    text-decoration: none;
+}
+
+/*barra busqueda*/
+header .form .input {
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+.up-section {
+    background-color: #EAC926;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.up-section-img {
+    width: 50%;
+    padding-right: 10px;
+}
+
+.up-section-img img {
+    width: 154px;
+}
+
+.up-section-search {
+    display: flex;
+    width: 50%;
+}
+
+.up-section-search input {
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.up-section-search button::before{
+    content: '';
+    display: block;
+    height: 26px;
+    border-left: 1px solid darkgray;
+}
+
+.up-section-search button {
+    align-items: center;
+    background-color: white;
+    border: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: darkgray;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    width: 50px;
+}
+
+.copy-header{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 12px;
+    padding: 10px;
+}
+
+.logo-liebre {
+    background-color: #EAC926;
+    width: 50%;
+}
+
+/*barra navegacion*/
+.main-navbar {
+    display: none;
+}
+
+.main-navbar ul {
+    color: rgb(40, 40, 40);
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.main-navbar a {
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+/*menu hamburguesa*/
+.burger-menu i {
+    background-color: #03264c;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    max-width: 45px;
+    padding: 15px 0;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/*banner*/
+.banner img { 
+    max-width: 100%;
+}
+
+
+/*main*/
+main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulares h3, .ofertas h3{
+    color: darkgray;
+    font-size: 26px;
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3 {
+    margin: 30px 0px;
+}
+
+.lista-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.productos {
+    background-color: #fff;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.productos img {
+    width: 100%;
+}
+
+.precios, .descuentos {
+    width: 50%;
+}
+
+.detalle-producto {
+    border-top: 1px solid #ebebeb;
+    color: rgb(51, 51, 51);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    position: relative ;
+}
+
+.detalle-producto, i .descuentos{
+    color: #39b54a;
+}
+
+.detalle-producto i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.detalle-producto > h4 {
+    color: darkgray;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.descuentos {
+    font-size: 14px;
+    width: 70%;
+}
+
+.precios {
+    color: #000;
+    font-size: 16px;
+    width: 30%;
+}
+
+/*footer*/
+footer {
+    background-color: #fff;
+}
+
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.footer-item {
+    color: darkgray;
+    padding: 35px 45px 20px;
+    text-align: center;
+    width: 100%;
+}
+  
+.footer-item > i {
+    color: #1259c3;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.footer-item > article > h2 {
+    font-size: 16px;
+}
+  
+.footer-item > article > p {
+    font-size: 12px;
+}
+  
+.footer-copyright > p {
+    font-size: 12px;
+    color: #666;
+    padding: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 90%;
+}
+
+/*LOGIN*/
+.login-section{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-section-user{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    width: 90%;
+}
+
+.login-section-password{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-left: auto;
+    width: 90%;
+}
+
+.login-section-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control{
+    border-radius: 5px;
+    border: hidden;
+    height: 30px;
+    padding-left: 10px;
+    width: 90%;
+}
+
+.login-button{
+    border-radius: 5px;
+    background-color: #1259c3;
+    color: #FFF;
+    height: 30px;
+    margin-bottom: 30px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-button:hover{
+    background-color: #0022AA;
+}
+
+/*REGISTER*/
+
+.register-section-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.register-section-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.register-submit-button{
+    border-radius: 5px;
+    background-color: #1259c3;
+    color: #FFF;
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    width: 20%;
+}
+
+.register-submit-button:hover{
+    background-color: #0022AA;
+}
+
+.register-reset-button{
+    border-radius: 5px;
+    background-color: #1259c3;
+    color: #FFF;
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    width: 20%;
+}
+
+.register-reset-button:hover{
+    background-color: #0022AA;
+}
+
+.checkBox-intereses{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    
+}
+
+.intereses-label{
+    margin-bottom: 20px;
+}
+
+.intereses-p{
+    color: black;
+    display: inline-block;
+    font-family: "Roboto";
+    font-size: 14px;
+    margin-left: 15px;
+    text-align: left;
+}
+
+.register-p{
+    text-align: left;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.register-section-user{
+    margin-bottom: 30px;
+}
+
+.register-section-birthDate{
+    margin-bottom: 30px;
+}
+
+.intereses-label{
+    margin-left: 5px;
+}
+
+.main-article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);                
+}
+
+.main-article:hover .descripciones{
+    visibility: visible;
+}
+
+/*tablet*/
+@media (min-width: 361px) {
+    .up-section-img {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .logo-liebre{
+        width: 32%;
+    } 
+
+    .up-section-search {
+        width: 32%;
+ 
+    }
+    .copy-header {
+        font-size: 10px;
+        text-align: left;
+        width: 32%;
+    }
+
+    .down-section {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 5px 10px;
+    }
+
+    .down-section nav {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .down-section nav ul {
+        display: flex;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .down-section nav a {
+        display: flex;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main-navbar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar li {
+        margin: 0 10px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+    .productos {
+        margin-right: 8px;
+        margin-bottom: 15px;
+        width: 47%;
+    }
+
+    .footer-item {
+        position: relative;
+        width: 33%;
+      }
+
+    .footer-item h2 {
+        margin-bottom: 30px;    
+    }
+    .footer-item p {
+        font-size: 14px;   
+    }
+ }
+
+ /*escritorio*/
+ @media (min-width: 769px) {
+    .up-section-img {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .logo-liebre{
+        width: 32%;
+    } 
+
+    .up-section-search {
+        width: 32%;
+ 
+    }
+    .copy-header {
+        font-size: 10px;
+        text-align: left;
+        width: 32%;
+    }
+
+    .down-section {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 5px 10px;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main-navbar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar li {
+        margin: 0 10px;
+    }
+
+    .down-section nav a {
+        display: flex;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .productos {
+        margin-right: 8px;
+        margin-bottom: 15px;
+        width: 22%;
+    }
+
+    .footer-item {
+        position: relative;
+        width: 33%;
+      }
+
+    .footer-item h2 {
+        margin-bottom: 30px;    
+    }
+    .footer-item p {
+        font-size: 14px;   
+    }
+ }
