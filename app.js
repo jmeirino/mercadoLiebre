@@ -5,8 +5,7 @@ const app = express();
 console.log(__dirname);
 app.use('/static', express.static(__dirname + '/public'));
 
-const port = process.env.PORT || 3030;
-app.listen(3030, ()=>{
+app.listen(process.env.PORT || port , ()=>{
     console.log('Servidor Corriendo');
 });
 
