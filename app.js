@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 
 console.log(__dirname);
-app.use('/static', express.static(__dirname + '/public'));
+app.use('/static', express.static(__dirname + 'public'));
 
 app.listen(process.env.PORT || port , ()=>{
     console.log('Servidor Corriendo');
